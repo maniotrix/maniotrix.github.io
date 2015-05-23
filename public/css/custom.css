@@ -1,0 +1,17 @@
+/* custom css */
+
+/* Keep them close */
+.index-post {
+  margin-bottom: 2.5em;
+}
+
+.read-more {
+  margin-top: -0.5rem;
+  float: right;
+  font-size: 13px;
+}
+
+.post-date {
+  margin-bottom: 0.3rem;
+  font-size: 15px;
+}

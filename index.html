@@ -3,9 +3,23 @@ layout: default
 title: Home
 ---
 
-<h2>Posts</h2>
-<ul class="posts">
-    {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="index-post">
+    <h2 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="excerpt">
+      {{ post.excerpt }}
+    </span>
+    <span class="read-more">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        READ MORE
+      </a>
+    </span>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>An Open Source Blog</title>
+ <link href="https://maniotrix.github.io/atom.xml" rel="self"/>
+ <link href="https://maniotrix.github.io/"/>
+ <updated>2015-05-23T13:37:40+00:00</updated>
+ <id>https://maniotrix.github.io</id>
+ <author>
+   <name>Prince</name>
+   <email>prince.mst13@itbhu.ac.in</email>
+ </author>
+
+ 
+ <entry>
+   <title>Google Summer Of Code with P2PSP</title>
+   <link href="https://maniotrix.github.io/Google-Summer-Of-Code-with-P2PSP"/>
+   <updated>2015-05-23T16:27:59+00:00</updated>
+   <id>https://maniotrix.github.io/google-summer-of-code-with-P2PSP</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/gsoc/gsoc2015.png&quot; alt=&quot;GSoC&quot;&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

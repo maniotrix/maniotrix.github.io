@@ -1,1 +1,34 @@
-markdown: rdiscount
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               An Open Source Blog
+tagline:             ''
+description:         '<a href="/assets/maniotrix.png" target="_blank"><img src="https://avatars0.githubusercontent.com/u/7295721?v=3&s=460" alt="HTML tutorial" style="width:75px;height:75px;border:0"></a> <a href="https://github.com/maniotrix"> @maniotrix </a> <p><b>Programmer , Performer , Dreamer</b>.</p>'
+url:                 https://maniotrix.github.io
+baseurl:             ''
+paginate:            1
+
+# About
+author:
+  name:              Prince
+  url:               https://github.com/maniotrix
+  email:             prince.mst13@itbhu.ac.in
+
+# Contact
+contact:
+  github:            http://github.com/maniotrix
+  twitter:           http://twitter.com/maniotrix
+  quora:             http://www.quora.com/Prince-Kumar-88
+  mail:              mailto:prince.mst13@itbhu.ac.in
+
+
+excerpt_separator:   <!-- excerpt -->
+timezone: Asia/Varanasi

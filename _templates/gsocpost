@@ -1,0 +1,10 @@
+---
+layout: {{ layout }}
+title: "{{ title }}"
+date: {{ date }}
+tags:
+  - OpenSource
+  - GSoC
+  - P2PSP
+permalink: /{{ title }}
+---
