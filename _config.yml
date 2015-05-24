@@ -9,8 +9,8 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               An Open Source Blog
-tagline:             ''
+title:               Blog
+tagline:             ' dedicated to Open Source '
 description:         '<a href="/assets/maniotrix.png" target="_blank"><img src="https://avatars0.githubusercontent.com/u/7295721?v=3&s=460" alt="HTML tutorial" style="width:75px;height:75px;border:0"></a> <a href="https://github.com/maniotrix"> @maniotrix </a> <p><b>Programmer , Performer , Dreamer</b>.</p>'
 url:                 https://maniotrix.github.io
 baseurl:             ''

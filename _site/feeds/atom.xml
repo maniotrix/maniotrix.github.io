@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>An Open Source Blog</title>
+ <title>Blog</title>
  <link href="https://maniotrix.github.io/atom.xml" rel="self"/>
  <link href="https://maniotrix.github.io/"/>
- <updated>2015-05-23T13:37:40+00:00</updated>
+ <updated>2015-05-24T10:09:15+00:00</updated>
  <id>https://maniotrix.github.io</id>
  <author>
    <name>Prince</name>
@@ -14,10 +14,56 @@
  
  <entry>
    <title>Google Summer Of Code with P2PSP</title>
-   <link href="https://maniotrix.github.io/Google-Summer-Of-Code-with-P2PSP"/>
+   <link href="https://maniotrix.github.io/Google-Summer-Of-Code-with-P2PSP.org"/>
    <updated>2015-05-23T16:27:59+00:00</updated>
    <id>https://maniotrix.github.io/google-summer-of-code-with-P2PSP</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/gsoc/gsoc2015.png&quot; alt=&quot;GSoC&quot;&gt;&lt;/p&gt;
+   <content type="html">&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gsoc/gsoc2015.png&quot; alt=&quot;GSoC&quot;&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;27 April 12 AM, I had opened &lt;a href=&quot;https://www.google-melange.com/gsoc/projects/list/google/gsoc2015&quot;&gt;Google Summer of code 2015 Accepted Projects&lt;/a&gt; page on my laptop for a few  minutes. I heard my other two friends have been selected.I was  nervous and stuck at &amp;quot;loading&amp;quot; on the webpage. Suddenly one of my friends came and told me that I have been selected.Next I was  screaming  and literally  jumped over him!&lt;/p&gt;
+
+&lt;p&gt;My Project &lt;a href=&quot;https://www.google-melange.com/gsoc/project/details/google/gsoc2015/maniotrix/5649050225344512&quot;&gt;INTEGRATION OF GUI,PLAYER AND PEER FOR THE P2PSP PYTHON IMPLEMENTATION&lt;/a&gt; has been  accepted by  mentoring organisation &lt;a href=&quot;https://www.google-melange.com/gsoc/org2/google/gsoc2015/p2psp&quot;&gt;P2P2SP.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!-- excerpt --&gt;
+
+&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gsoc/What%20is%20gsoc.png&quot; alt=&quot;GSoC&quot;&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;h1&gt;P2PSP.org&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gsoc/p2psp.png&quot; alt=&quot;P2PSP&quot;&gt;
+P2PSP.org is a nonprofit organization that develops the P2PSP protocol. P2PSP is an application layer protocol designed for the real-time streaming of multimedia content over the Internet.Learn more about P2PSP Protocol at &lt;a href=&quot;p2psp.org&quot;&gt;P2PSP&lt;/a&gt; Webpage.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;h1&gt;P2PSP-GUI Project&lt;/h1&gt;
+
+&lt;p&gt;The main aim of this project is to use LibVLC (a media framework that embeds the features of VLC into an application) to integrate a peer and a player into a single executable.&lt;/p&gt;
+
+&lt;h4&gt;Project mentors are:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/cristobalmedinalopez&quot;&gt;Cristóbal Medina López&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/josejuansanchez&quot;&gt;José Juan Sánchez&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more information about the project please check out my &lt;a href=&quot;https://docs.google.com/document/d/1fX6m4mXsN5mwIgsbKIugxq0dXRuFcZUVCLReyyBlO3U/edit?usp=sharing&quot;&gt;proposal&lt;/a&gt; and keep updated with the blog.&lt;/p&gt;
 </content>
  </entry>
  
