@@ -4,13 +4,100 @@
  <title>Blog</title>
  <link href="https://maniotrix.github.io/atom.xml" rel="self"/>
  <link href="https://maniotrix.github.io/"/>
- <updated>2015-05-24T20:01:56+00:00</updated>
+ <updated>2015-06-30T14:48:27+00:00</updated>
  <id>https://maniotrix.github.io</id>
  <author>
    <name>Prince</name>
    <email>prince.mst13@itbhu.ac.in</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSOC 2015] P2PSP  GUI Project Progress upto MidTerm Evaluation:</title>
+   <link href="https://maniotrix.github.io/P2PSP-GUI"/>
+   <updated>2015-06-30T16:27:59+00:00</updated>
+   <id>https://maniotrix.github.io/gsoc</id>
+   <content type="html">&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/89p-sDmKmYc&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I hope to have completed my &lt;a href=&quot;https://github.com/P2PSP/p2psp/milestones&quot;&gt;midterm milestone&lt;/a&gt;.Below are the notable features in current P2PSP GUI project.For more information about the implementaion,discussions and changes in this period  go through the &lt;a href=&quot;https://github.com/P2PSP/p2psp/tree/gui&quot;&gt;gui&lt;/a&gt; branch at &lt;a href=&quot;https://github.com/P2PSP/p2psp&quot;&gt;p2psp repo&lt;/a&gt; ,  &lt;a href=&quot;https://github.com/P2PSP/p2psp/pulls?q=is%3Apr+author%3Amaniotrix+is%3Aclosed&quot;&gt;Pull Requests&lt;/a&gt; on github and the links provided in each week.&lt;/p&gt;
+
+&lt;!-- excerpt --&gt;
+
+&lt;h1&gt;Week 1(A P2PSP Peer(channel) played in Gui&amp;#39;s player):&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;On clicking player&amp;#39;s play button  ,a default peer(using localhost to connect to the splitter) is started and played.&lt;/li&gt;
+&lt;li&gt;Visibility of widget displaying channels can be toggled from menu bar.&lt;/li&gt;
+&lt;li&gt;Fullscreen feature introduced in player.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Pull Requests:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/13&quot;&gt;channel window visibility can be toggled and stream played&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/17&quot;&gt;resolving merge conflicts for PR(#13)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Week 2(Gui Architecture):&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt; App structured and source code refactored following MVC Pattern.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Pull Requests:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/24&quot;&gt;Gui Architecture&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/25&quot;&gt;Proposal with minor changes related with naming and directory structure.&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Week 3(displaying more information about current playing channel) :&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt; A progress bar(located above player) is used to display buffer status(only when it is updated).&lt;/li&gt;
+&lt;li&gt; Download/Upload Speed and peers in team displayed.&lt;/li&gt;
+&lt;li&gt; More Exception Handling is done(using decorator).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/7295721/8102290/912f889c-103c-11e5-843b-f03ea7051c3b.png&quot; alt=&quot;Download/Upload Speed and Users Online&quot;&gt;&lt;/p&gt;
+
+&lt;h4&gt;Pull Requests:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/29&quot;&gt;Display down/up speed and Users&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/33&quot;&gt;Fix for issues: #30 #32&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/36&quot;&gt;Fix for Issues : #34 #35&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Week 4(Channels can be exported to a JSON File and vice-versa):&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt; First importing and exporting channels were tested without gui.&lt;/li&gt;
+&lt;li&gt; channels can be imported and exported according to the format discussed in this issue.&lt;/li&gt;
+&lt;li&gt; channels can be played by double clicking the icons in gui,again default peer is played.Channel description is dispayed as tooltip of icons.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/p2psp/Screenshot%20from%202015-06-30%2019:34:20.png&quot; alt=&quot;Import Dialog&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/p2psp/Screenshot%20from%202015-06-30%2019:34:38.png&quot; alt=&quot;Export Dialog&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/7295721/8395945/33809556-1dac-11e5-9700-811ff1dbba3b.png&quot; alt=&quot;screenshot from 2015-06-28 15 39 16&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/7295721/8391069/0d334f2e-1cd0-11e5-8ccd-b70208538090.png&quot; alt=&quot;screenshot from 2015-06-27 13 23 31&quot;&gt;&lt;/p&gt;
+
+&lt;h4&gt;Pull Requests:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/42&quot;&gt;importing/exporting channels&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/44&quot;&gt;Display channels in Channel box&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/45&quot;&gt;thumbnail size increased , channel description shown as tooltip&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Google Summer Of Code with P2PSP</title>
