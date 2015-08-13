@@ -4,13 +4,124 @@
  <title>Blog</title>
  <link href="https://maniotrix.github.io/atom.xml" rel="self"/>
  <link href="https://maniotrix.github.io/"/>
- <updated>2015-06-30T14:48:27+00:00</updated>
+ <updated>2015-08-13T13:31:59+00:00</updated>
  <id>https://maniotrix.github.io</id>
  <author>
    <name>Prince</name>
    <email>prince.mst13@itbhu.ac.in</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSOC 2015] P2PSP  GUI Project Progress</title>
+   <link href="https://maniotrix.github.io/P2PSP-GUI"/>
+   <updated>2015-08-13T16:27:59+00:00</updated>
+   <id>https://maniotrix.github.io/gsoc</id>
+   <content type="html">&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Below are the latest updates from the P2PSP GUI Project.&lt;/p&gt;
+
+&lt;p&gt;For more information about the implementaion,discussions and changes after Midterm Evaluation go through the &lt;a href=&quot;https://github.com/P2PSP/p2psp/tree/gui&quot;&gt;gui&lt;/a&gt; branch at &lt;a href=&quot;https://github.com/P2PSP/p2psp&quot;&gt;p2psp repo&lt;/a&gt; ,  &lt;a href=&quot;https://github.com/P2PSP/p2psp/pulls?q=is%3Apr+is%3Aclosed&quot;&gt;Pull Requests&lt;/a&gt; and documentation of modules on github.&lt;/p&gt;
+
+&lt;!-- excerpt --&gt;
+
+&lt;h2&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/issues/47&quot;&gt;Issue #47 : &lt;/a&gt; Volume Bar for Player&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Volume controls inside Player Area have been develop using &lt;a href=&quot;https://developer.gnome.org/gtk3/stable/GtkVolumeButton.html&quot;&gt;GtkVolumeButton&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Actually Volume Button is &lt;a href=&quot;https://developer.gnome.org/gtk3/3.5/GtkScaleButton.html&quot;&gt;GtkScaleButton&lt;/a&gt;.After click , A GtkScale appears. Using Scale , volume can be adjusted.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Pull Request resolving this issue:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/50&quot;&gt;Volume Bar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/7295721/8667051/83ceee5a-2a17-11e5-9676-0bb5064ff0a0.png&quot; alt=&quot;Volume Button&quot;&gt;.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/issues/15&quot;&gt;Issue #15 :&lt;/a&gt; tests for player&lt;/h2&gt;
+
+&lt;p&gt;Player tested separately with gtk2 and gtk3(GObject Introspection).&lt;/p&gt;
+
+&lt;h4&gt;Results:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mouse pointer did not disappear using gtk2.Media was played inside &lt;a href=&quot;https://developer.gnome.org/gtk3/stable/GtkDrawingArea.html&quot;&gt;GtkDrawingArea&lt;/a&gt;(Player Surface) using libvlc.&lt;/li&gt;
+&lt;li&gt;However with gtk3 , mouse cursor disappears as it moves inside Player Area. But it happens only when some media is being played through libvlc.Otherwise everything is fine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Pull Request resolving this issue:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/55&quot;&gt;tests for player&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/GDWnwQTbrJI&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/issues/54&quot;&gt;Issue #54 :&lt;/a&gt; Use p2psp as file extension&lt;/h2&gt;
+
+&lt;p&gt;Channels are exported or imported in JSON format. For unique identification of P2PSP channels, &amp;quot;p2psp&amp;quot; will be used as file extension.&lt;/p&gt;
+
+&lt;h4&gt;Pull Request resolving this issue:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/56&quot;&gt;Added DoxyFile and Player&amp;#39;s Surface key events and altered play button functionality.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Main changes related to this PR :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Doxygen configuration file added to doc folder.&lt;/li&gt;
+&lt;li&gt;Replaced Button events with Key events inside Player Surface(GtkDrawingArea).&lt;/li&gt;
+&lt;li&gt;When Player Surface is fullscreen ,after  pressing &amp;quot;ESC&amp;quot; , one can escape fullscreen.&lt;/li&gt;
+&lt;li&gt;&amp;quot;p2psp&amp;quot; is used as file extension for importing/exporting channels.&lt;/li&gt;
+&lt;li&gt;&amp;quot;Play&amp;quot; button plays only selected channels from Iconview of channels.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/p2psp/Screenshot%20from%202015-08-13%2018:08:34.png&quot; alt=&quot;Export as P2PSP file&quot;&gt;&lt;/p&gt;
+
+&lt;h2&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/issues/58&quot;&gt;Issue #58 :&lt;/a&gt; App Crashes when run for long time&lt;/h2&gt;
+
+&lt;p&gt;App kept crashing when run for long period of time.
+This was resolved by calling functions inside &amp;quot;GObject.idle_add()&amp;quot;.
+To know more , go through documentation of &lt;a href=&quot;https://github.com/P2PSP/p2psp/blob/gui/src/p2psp_application_gui.py&quot;&gt;p2psp&lt;em&gt;application&lt;/em&gt;gui&lt;/a&gt; module.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/p2psp/Screenshot%20from%202015-08-13%2018:50:39.png&quot; alt=&quot;Gtk and Threads&quot;&gt;&lt;/p&gt;
+
+&lt;h4&gt;Pull Request resolving this issue:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/61&quot;&gt;Issue #58 Resolved&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Main changes related to this PR :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Gui updated using gobject&amp;#39;s idle_add function(Thread Safe).&lt;/li&gt;
+&lt;li&gt;Added &amp;quot;&lt;strong&gt;init&lt;/strong&gt;.py&amp;quot; in src folder(has to be a Python package for tests).&lt;/li&gt;
+&lt;li&gt;A default channel can be played without importing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/issues/53&quot;&gt;Issue #53 :&lt;/a&gt; Proper Documentation.&lt;/h2&gt;
+
+&lt;p&gt;Source Code documented using &lt;a href=&quot;http://www.doxygen.org/&quot;&gt;Doxygen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4&gt;Pull Request resolving this issue:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/P2PSP/p2psp/pull/63&quot;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Main changes related to this PR :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;All the Python packages(except core) in P2PSP Project were documented.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[GSOC 2015] P2PSP  GUI Project Progress upto MidTerm Evaluation:</title>
@@ -23,7 +134,7 @@
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/89p-sDmKmYc&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;I hope to have completed my &lt;a href=&quot;https://github.com/P2PSP/p2psp/milestones&quot;&gt;midterm milestone&lt;/a&gt;.Below are the notable features in current P2PSP GUI project.For more information about the implementaion,discussions and changes in this period  go through the &lt;a href=&quot;https://github.com/P2PSP/p2psp/tree/gui&quot;&gt;gui&lt;/a&gt; branch at &lt;a href=&quot;https://github.com/P2PSP/p2psp&quot;&gt;p2psp repo&lt;/a&gt; ,  &lt;a href=&quot;https://github.com/P2PSP/p2psp/pulls?q=is%3Apr+author%3Amaniotrix+is%3Aclosed&quot;&gt;Pull Requests&lt;/a&gt; on github and the links provided in each week.&lt;/p&gt;
+&lt;p&gt;I hope to have completed my &lt;a href=&quot;https://github.com/P2PSP/p2psp/milestones&quot;&gt;midterm milestone&lt;/a&gt;.Below are the notable features in current P2PSP GUI project.For more information about the implementaion,discussions and changes in this period  go through the &lt;a href=&quot;https://github.com/P2PSP/p2psp/tree/gui&quot;&gt;gui&lt;/a&gt; branch at &lt;a href=&quot;https://github.com/P2PSP/p2psp&quot;&gt;p2psp repo&lt;/a&gt; ,  &lt;a href=&quot;https://github.com/P2PSP/p2psp/pulls?q=is%3Apr+is%3Aclosed&quot;&gt;Pull Requests&lt;/a&gt; on github and the links provided in each week.&lt;/p&gt;
 
 &lt;!-- excerpt --&gt;
 

@@ -11,7 +11,7 @@
 
   <title>
     
-      [GSOC 2015] P2PSP  GUI Project Progress upto MidTerm Evaluation: &middot; Blog
+      [GSOC 2015] P2PSP  GUI Project Progress &middot; Blog
     
   </title>
 
@@ -84,6 +84,10 @@
         
       
     
+      
+        
+      
+    
 
     <a class="sidebar-nav-item" href="http://github.com/maniotrix/maniotrix.github.io">Source</a>
     <a class="sidebar-nav-item" href="http://github.com/maniotrix">GitHub</a>
@@ -114,86 +118,110 @@
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">[GSOC 2015] P2PSP  GUI Project Progress upto MidTerm Evaluation:</h1>
-  <span class="post-date">30 Jun 2015</span>
+  <h1 class="post-title">[GSOC 2015] P2PSP  GUI Project Progress</h1>
+  <span class="post-date">13 Aug 2015</span>
   <hr>
 
 <hr>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/89p-sDmKmYc" frameborder="0" allowfullscreen></iframe>
+<p>Below are the latest updates from the P2PSP GUI Project.</p>
 
-<p>I hope to have completed my <a href="https://github.com/P2PSP/p2psp/milestones">midterm milestone</a>.Below are the notable features in current P2PSP GUI project.For more information about the implementaion,discussions and changes in this period  go through the <a href="https://github.com/P2PSP/p2psp/tree/gui">gui</a> branch at <a href="https://github.com/P2PSP/p2psp">p2psp repo</a> ,  <a href="https://github.com/P2PSP/p2psp/pulls?q=is%3Apr+author%3Amaniotrix+is%3Aclosed">Pull Requests</a> on github and the links provided in each week.</p>
+<p>For more information about the implementaion,discussions and changes after Midterm Evaluation go through the <a href="https://github.com/P2PSP/p2psp/tree/gui">gui</a> branch at <a href="https://github.com/P2PSP/p2psp">p2psp repo</a> ,  <a href="https://github.com/P2PSP/p2psp/pulls?q=is%3Apr+is%3Aclosed">Pull Requests</a> and documentation of modules on github.</p>
 
 <!-- excerpt -->
 
-<h1>Week 1(A P2PSP Peer(channel) played in Gui&#39;s player):</h1>
+<h2><a href="https://github.com/P2PSP/p2psp/issues/47">Issue #47 : </a> Volume Bar for Player</h2>
 
 <ul>
-<li>On clicking player&#39;s play button  ,a default peer(using localhost to connect to the splitter) is started and played.</li>
-<li>Visibility of widget displaying channels can be toggled from menu bar.</li>
-<li>Fullscreen feature introduced in player.</li>
+<li><p>Volume controls inside Player Area have been develop using <a href="https://developer.gnome.org/gtk3/stable/GtkVolumeButton.html">GtkVolumeButton</a>.</p></li>
+<li><p>Actually Volume Button is <a href="https://developer.gnome.org/gtk3/3.5/GtkScaleButton.html">GtkScaleButton</a>.After click , A GtkScale appears. Using Scale , volume can be adjusted.</p></li>
 </ul>
 
-<h4>Pull Requests:</h4>
+<h4>Pull Request resolving this issue:</h4>
 
 <ul>
-<li><p><a href="https://github.com/P2PSP/p2psp/pull/13">channel window visibility can be toggled and stream played</a></p></li>
-<li><p><a href="https://github.com/P2PSP/p2psp/pull/17">resolving merge conflicts for PR(#13)</a></p></li>
+<li><a href="https://github.com/P2PSP/p2psp/pull/50">Volume Bar</a></li>
 </ul>
 
-<h1>Week 2(Gui Architecture):</h1>
+<p><img src="https://cloud.githubusercontent.com/assets/7295721/8667051/83ceee5a-2a17-11e5-9676-0bb5064ff0a0.png" alt="Volume Button">.</p>
+
+<h2><a href="https://github.com/P2PSP/p2psp/issues/15">Issue #15 :</a> tests for player</h2>
+
+<p>Player tested separately with gtk2 and gtk3(GObject Introspection).</p>
+
+<h4>Results:</h4>
 
 <ul>
-<li> App structured and source code refactored following MVC Pattern.</li>
+<li>Mouse pointer did not disappear using gtk2.Media was played inside <a href="https://developer.gnome.org/gtk3/stable/GtkDrawingArea.html">GtkDrawingArea</a>(Player Surface) using libvlc.</li>
+<li>However with gtk3 , mouse cursor disappears as it moves inside Player Area. But it happens only when some media is being played through libvlc.Otherwise everything is fine.</li>
 </ul>
 
-<h4>Pull Requests:</h4>
+<h4>Pull Request resolving this issue:</h4>
 
 <ul>
-<li><p><a href="https://github.com/P2PSP/p2psp/pull/24">Gui Architecture</a></p></li>
-<li><p><a href="https://github.com/P2PSP/p2psp/pull/25">Proposal with minor changes related with naming and directory structure.</a></p></li>
+<li><a href="https://github.com/P2PSP/p2psp/pull/55">tests for player</a></li>
 </ul>
 
-<h1>Week 3(displaying more information about current playing channel) :</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GDWnwQTbrJI" frameborder="0" allowfullscreen></iframe>
+
+<h2><a href="https://github.com/P2PSP/p2psp/issues/54">Issue #54 :</a> Use p2psp as file extension</h2>
+
+<p>Channels are exported or imported in JSON format. For unique identification of P2PSP channels, &quot;p2psp&quot; will be used as file extension.</p>
+
+<h4>Pull Request resolving this issue:</h4>
 
 <ul>
-<li> A progress bar(located above player) is used to display buffer status(only when it is updated).</li>
-<li> Download/Upload Speed and peers in team displayed.</li>
-<li> More Exception Handling is done(using decorator).</li>
+<li><a href="https://github.com/P2PSP/p2psp/pull/56">Added DoxyFile and Player&#39;s Surface key events and altered play button functionality.</a></li>
 </ul>
 
-<p><img src="https://cloud.githubusercontent.com/assets/7295721/8102290/912f889c-103c-11e5-843b-f03ea7051c3b.png" alt="Download/Upload Speed and Users Online"></p>
-
-<h4>Pull Requests:</h4>
+<p>Main changes related to this PR :</p>
 
 <ul>
-<li><p><a href="https://github.com/P2PSP/p2psp/pull/29">Display down/up speed and Users</a></p></li>
-<li><p><a href="https://github.com/P2PSP/p2psp/pull/33">Fix for issues: #30 #32</a></p></li>
-<li><p><a href="https://github.com/P2PSP/p2psp/pull/36">Fix for Issues : #34 #35</a></p></li>
+<li>Doxygen configuration file added to doc folder.</li>
+<li>Replaced Button events with Key events inside Player Surface(GtkDrawingArea).</li>
+<li>When Player Surface is fullscreen ,after  pressing &quot;ESC&quot; , one can escape fullscreen.</li>
+<li>&quot;p2psp&quot; is used as file extension for importing/exporting channels.</li>
+<li>&quot;Play&quot; button plays only selected channels from Iconview of channels.</li>
 </ul>
 
-<h1>Week 4(Channels can be exported to a JSON File and vice-versa):</h1>
+<p><img src="/assets/p2psp/Screenshot%20from%202015-08-13%2018:08:34.png" alt="Export as P2PSP file"></p>
+
+<h2><a href="https://github.com/P2PSP/p2psp/issues/58">Issue #58 :</a> App Crashes when run for long time</h2>
+
+<p>App kept crashing when run for long period of time.
+This was resolved by calling functions inside &quot;GObject.idle_add()&quot;.
+To know more , go through documentation of <a href="https://github.com/P2PSP/p2psp/blob/gui/src/p2psp_application_gui.py">p2psp<em>application</em>gui</a> module.</p>
+
+<p><img src="/assets/p2psp/Screenshot%20from%202015-08-13%2018:50:39.png" alt="Gtk and Threads"></p>
+
+<h4>Pull Request resolving this issue:</h4>
 
 <ul>
-<li> First importing and exporting channels were tested without gui.</li>
-<li> channels can be imported and exported according to the format discussed in this issue.</li>
-<li> channels can be played by double clicking the icons in gui,again default peer is played.Channel description is dispayed as tooltip of icons.</li>
+<li><a href="https://github.com/P2PSP/p2psp/pull/61">Issue #58 Resolved</a></li>
 </ul>
 
-<p><img src="/assets/p2psp/Screenshot%20from%202015-06-30%2019:34:20.png" alt="Import Dialog"></p>
-
-<p><img src="/assets/p2psp/Screenshot%20from%202015-06-30%2019:34:38.png" alt="Export Dialog"></p>
-
-<p><img src="https://cloud.githubusercontent.com/assets/7295721/8395945/33809556-1dac-11e5-9700-811ff1dbba3b.png" alt="screenshot from 2015-06-28 15 39 16"></p>
-
-<p><img src="https://cloud.githubusercontent.com/assets/7295721/8391069/0d334f2e-1cd0-11e5-8ccd-b70208538090.png" alt="screenshot from 2015-06-27 13 23 31"></p>
-
-<h4>Pull Requests:</h4>
+<p>Main changes related to this PR :</p>
 
 <ul>
-<li><p><a href="https://github.com/P2PSP/p2psp/pull/42">importing/exporting channels</a></p></li>
-<li><p><a href="https://github.com/P2PSP/p2psp/pull/44">Display channels in Channel box</a></p></li>
-<li><p><a href="https://github.com/P2PSP/p2psp/pull/45">thumbnail size increased , channel description shown as tooltip</a></p></li>
+<li>Gui updated using gobject&#39;s idle_add function(Thread Safe).</li>
+<li>Added &quot;<strong>init</strong>.py&quot; in src folder(has to be a Python package for tests).</li>
+<li>A default channel can be played without importing.</li>
+</ul>
+
+<h2><a href="https://github.com/P2PSP/p2psp/issues/53">Issue #53 :</a> Proper Documentation.</h2>
+
+<p>Source Code documented using <a href="http://www.doxygen.org/">Doxygen</a>.</p>
+
+<h4>Pull Request resolving this issue:</h4>
+
+<ul>
+<li><a href="https://github.com/P2PSP/p2psp/pull/63">Documentation</a></li>
+</ul>
+
+<p>Main changes related to this PR :</p>
+
+<ul>
+<li>All the Python packages(except core) in P2PSP Project were documented.</li>
 </ul>
 
 </div>
@@ -250,6 +278,15 @@
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/P2PSP-GUI">
+            [GSOC 2015] P2PSP  GUI Project Progress upto MidTerm Evaluation:
+            <small>30 Jun 2015</small>
+          </a>
+        </h3>
+      </li>
     
       <li>
         <h3>
