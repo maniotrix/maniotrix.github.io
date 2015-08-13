@@ -11,7 +11,7 @@
 
   <title>
     
-      Google Summer Of Code with P2PSP &middot; Blog
+      [GSOC 2015] P2PSP  GUI Project Progress upto MidTerm Evaluation: &middot; Blog
     
   </title>
 
@@ -118,55 +118,87 @@
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">Google Summer Of Code with P2PSP</h1>
-  <span class="post-date">23 May 2015</span>
+  <h1 class="post-title">[GSOC 2015] P2PSP  GUI Project Progress upto MidTerm Evaluation:</h1>
+  <span class="post-date">30 Jun 2015</span>
   <hr>
 
 <hr>
 
-<p><img src="/assets/gsoc/gsoc2015.png" alt="GSoC"></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/89p-sDmKmYc" frameborder="0" allowfullscreen></iframe>
 
-<hr>
-
-<hr>
-
-<p>27 April 12 AM, I had opened <a href="https://www.google-melange.com/gsoc/projects/list/google/gsoc2015">Google Summer of code 2015 Accepted Projects</a> page on my laptop for a few  minutes. I heard my other two friends have been selected.I was  nervous and stuck at &quot;loading&quot; on the webpage. Suddenly one of my friends came and told me that I have been selected.Next I was  screaming  and literally  jumped over him!</p>
-
-<p>My Project <a href="https://www.google-melange.com/gsoc/project/details/google/gsoc2015/maniotrix/5649050225344512">INTEGRATION OF GUI,PLAYER AND PEER FOR THE P2PSP PYTHON IMPLEMENTATION</a> has been  accepted by  mentoring organisation <a href="https://www.google-melange.com/gsoc/org2/google/gsoc2015/p2psp">P2P2SP.org</a>.</p>
+<p>I hope to have completed my <a href="https://github.com/P2PSP/p2psp/milestones">midterm milestone</a>.Below are the notable features in current P2PSP GUI project.For more information about the implementaion,discussions and changes in this period  go through the <a href="https://github.com/P2PSP/p2psp/tree/gui">gui</a> branch at <a href="https://github.com/P2PSP/p2psp">p2psp repo</a> ,  <a href="https://github.com/P2PSP/p2psp/pulls?q=is%3Apr+is%3Aclosed">Pull Requests</a> on github and the links provided in each week.</p>
 
 <!-- excerpt -->
 
-<hr>
-
-<hr>
-
-<p><img src="/assets/gsoc/What%20is%20gsoc.png" alt="GSoC"></p>
-
-<hr>
-
-<hr>
-
-<h1>P2PSP.org</h1>
-
-<p><img src="/assets/gsoc/p2psp.png" alt="P2PSP">
-P2PSP.org is a nonprofit organization that develops the P2PSP protocol. P2PSP is an application layer protocol designed for the real-time streaming of multimedia content over the Internet.Learn more about P2PSP Protocol at <a href="p2psp.org">P2PSP</a> Webpage.</p>
-
-<hr>
-
-<hr>
-
-<h1>P2PSP-GUI Project</h1>
-
-<p>The main aim of this project is to use LibVLC (a media framework that embeds the features of VLC into an application) to integrate a peer and a player into a single executable.</p>
-
-<h4>Project mentors are:</h4>
+<h1>Week 1(A P2PSP Peer(channel) played in Gui&#39;s player):</h1>
 
 <ul>
-<li><a href="https://github.com/cristobalmedinalopez">Cristóbal Medina López</a></li>
-<li><a href="https://github.com/josejuansanchez">José Juan Sánchez</a></li>
+<li>On clicking player&#39;s play button  ,a default peer(using localhost to connect to the splitter) is started and played.</li>
+<li>Visibility of widget displaying channels can be toggled from menu bar.</li>
+<li>Fullscreen feature introduced in player.</li>
 </ul>
 
-<p>For more information about the project please check out my <a href="https://docs.google.com/document/d/1fX6m4mXsN5mwIgsbKIugxq0dXRuFcZUVCLReyyBlO3U/edit?usp=sharing">proposal</a> and keep updated with the blog.</p>
+<h4>Pull Requests:</h4>
+
+<ul>
+<li><p><a href="https://github.com/P2PSP/p2psp/pull/13">channel window visibility can be toggled and stream played</a></p></li>
+<li><p><a href="https://github.com/P2PSP/p2psp/pull/17">resolving merge conflicts for PR(#13)</a></p></li>
+</ul>
+
+<h1>Week 2(Gui Architecture):</h1>
+
+<ul>
+<li> App structured and source code refactored following MVC Pattern.</li>
+</ul>
+
+<h4>Pull Requests:</h4>
+
+<ul>
+<li><p><a href="https://github.com/P2PSP/p2psp/pull/24">Gui Architecture</a></p></li>
+<li><p><a href="https://github.com/P2PSP/p2psp/pull/25">Proposal with minor changes related with naming and directory structure.</a></p></li>
+</ul>
+
+<h1>Week 3(displaying more information about current playing channel) :</h1>
+
+<ul>
+<li> A progress bar(located above player) is used to display buffer status(only when it is updated).</li>
+<li> Download/Upload Speed and peers in team displayed.</li>
+<li> More Exception Handling is done(using decorator).</li>
+</ul>
+
+<p><img src="https://cloud.githubusercontent.com/assets/7295721/8102290/912f889c-103c-11e5-843b-f03ea7051c3b.png" alt="Download/Upload Speed and Users Online"></p>
+
+<h4>Pull Requests:</h4>
+
+<ul>
+<li><p><a href="https://github.com/P2PSP/p2psp/pull/29">Display down/up speed and Users</a></p></li>
+<li><p><a href="https://github.com/P2PSP/p2psp/pull/33">Fix for issues: #30 #32</a></p></li>
+<li><p><a href="https://github.com/P2PSP/p2psp/pull/36">Fix for Issues : #34 #35</a></p></li>
+</ul>
+
+<h1>Week 4(Channels can be exported to a JSON File and vice-versa):</h1>
+
+<ul>
+<li> First importing and exporting channels were tested without gui.</li>
+<li> channels can be imported and exported according to the format discussed in this issue.</li>
+<li> channels can be played by double clicking the icons in gui,again default peer is played.Channel description is dispayed as tooltip of icons.</li>
+</ul>
+
+<p><img src="/assets/p2psp/Screenshot%20from%202015-06-30%2019:34:20.png" alt="Import Dialog"></p>
+
+<p><img src="/assets/p2psp/Screenshot%20from%202015-06-30%2019:34:38.png" alt="Export Dialog"></p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/7295721/8395945/33809556-1dac-11e5-9700-811ff1dbba3b.png" alt="screenshot from 2015-06-28 15 39 16"></p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/7295721/8391069/0d334f2e-1cd0-11e5-8ccd-b70208538090.png" alt="screenshot from 2015-06-27 13 23 31"></p>
+
+<h4>Pull Requests:</h4>
+
+<ul>
+<li><p><a href="https://github.com/P2PSP/p2psp/pull/42">importing/exporting channels</a></p></li>
+<li><p><a href="https://github.com/P2PSP/p2psp/pull/44">Display channels in Channel box</a></p></li>
+<li><p><a href="https://github.com/P2PSP/p2psp/pull/45">thumbnail size increased , channel description shown as tooltip</a></p></li>
+</ul>
 
 </div>
 
@@ -177,7 +209,7 @@ P2PSP.org is a nonprofit organization that develops the P2PSP protocol. P2PSP is
   </span>
 
 
-  <span class="fb-like" data-href=https://maniotrix.github.io/Google-Summer-Of-Code-with-P2PSP.org data-action="like" data-layout="button_count" data-show-faces="false" data-share="false" style="display: inline-flex;">
+  <span class="fb-like" data-href=https://maniotrix.github.io/GSOC-2015 P2PSP GUI Project Progress upto MidTerm Evaluation data-action="like" data-layout="button_count" data-show-faces="false" data-share="false" style="display: inline-flex;">
   </span>
   
 <!-- Place this tag in your head or just before your close body tag. -->
@@ -234,9 +266,9 @@ P2PSP.org is a nonprofit organization that develops the P2PSP protocol. P2PSP is
     
       <li>
         <h3>
-          <a href="/GSOC-2015 P2PSP GUI Project Progress upto MidTerm Evaluation">
-            [GSOC 2015] P2PSP  GUI Project Progress upto MidTerm Evaluation:
-            <small>30 Jun 2015</small>
+          <a href="/Google-Summer-Of-Code-with-P2PSP.org">
+            Google Summer Of Code with P2PSP
+            <small>23 May 2015</small>
           </a>
         </h3>
       </li>
