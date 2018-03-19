@@ -21,7 +21,7 @@ My Project [INTEGRATION OF GUI,PLAYER AND PEER FOR THE P2PSP PYTHON IMPLEMENTATI
 <!-- excerpt -->
 ************************
 ************************
-![GSoC](/assets/gsoc/What is gsoc.png)
+![GSoC](/assets/gsoc/What_is_gsoc.png)
 ************************
 ************************
 
