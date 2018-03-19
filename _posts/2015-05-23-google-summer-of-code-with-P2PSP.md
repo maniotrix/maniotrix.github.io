@@ -6,7 +6,7 @@ tags:
   - OpenSource
   - GSoC
   - P2PSP
-permalink: /Google-Summer-Of-Code-with-P2PSP.org
+permalink: /posts/Google-Summer-Of-Code-with-P2PSP.org
 ---
 ************************
 ************************
